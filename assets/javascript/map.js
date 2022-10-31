@@ -25,12 +25,14 @@ function initMap() {
   let myLatlng = {lat: 30.275, lng: -97.730};
   // Initialize Firebase
   let config = {
-    apiKey: "AIzaSyAQfDZXPnxppD3_QVQrAlg-0NW5TwqXOHY",
-    authDomain: "ut-drive-and-charge-project.firebaseapp.com",
-    databaseURL: "https://ut-drive-and-charge-project.firebaseio.com",
-    projectId: "ut-drive-and-charge-project",
-    storageBucket: "ut-drive-and-charge-project.appspot.com",
-    messagingSenderId: "231709144176"
+    apiKey: "AIzaSyBvvEjbSASL1XEzekqx0geFN_oZT6oTToY",
+      authDomain: "dinencharge.firebaseapp.com",
+      databaseURL: "https://dinencharge.firebaseio.com",
+      projectId: "dinencharge",
+      storageBucket: "dinencharge.appspot.com",
+      messagingSenderId: "376300146566",
+      appId: "1:376300146566:web:cb0a52b6a31d3ed2cee607",
+      measurementId: "G-EDVFKV9C55"
   };
   firebase.initializeApp(config);
 
@@ -118,7 +120,7 @@ let database = firebase.database();
         // Creates markers on the page and stores them in array
         let marker = new google.maps.Marker({position:{lat: newLat, lng: newLong  }, map: map});
 
-        //console.log("test"+marker.position.lat());
+
            //post new lat and long to a marker
               //div only being run
         let contentString = "<div><p> Address: "  +address+"</p><br><p> Fee: " +cost+"</p></div>";
